@@ -20,23 +20,19 @@ class BubbleSort(Sort):
 
 class SelectionSort(Sort):
     def sort(nums):
-    # Значение i соответствует кол-ву отсортированных значений
         for i in range(len(nums)):
-             # Исходно считаем наименьшим первый элемент
             lowest_value_index = i
-            # Этот цикл перебирает несортированные элементы
             for j in range(i + 1, len(nums)):
                 if nums[j] < nums[lowest_value_index]:
                     lowest_value_index = j
-            # Самый маленький элемент меняем с первым в списке
             nums[i], nums[lowest_value_index] = nums[lowest_value_index], nums[i]
 
 class SortStrategy:
     def strategy(self, strategy):
         self.strategy = strategy
 
-    def sort(nums):
-        return #????????
+    def sort(self, nums):
+        print('Result is', self.strategy.sort(nums)) #????????
     
     #def sort(numbers):
      #   return
