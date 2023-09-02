@@ -1,18 +1,20 @@
-## Getting Started
+## Sem6
+### Бинарный поиск
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+● **Контекст**
 
-## Folder Structure
+Предположим, что мы хотим найти элемент в массиве (получить 
+его индекс). Мы можем это сделать просто перебрав все элементы. 
+Но что, если массив уже отсортирован? В этом случае можно 
+использовать бинарный поиск. Принцип прост: сначала берём 
+элемент находящийся посередине и сравниваем с тем, который мы 
+хотим найти. Если центральный элемент больше нашего, 
+рассматриваем массив слева от центрального, а если больше - 
+справа и повторяем так до тех пор, пока не найдем наш элемент.
 
-The workspace contains two folders by default, where:
+● **Ваша задача**
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+Написать программу на любом языке в любой парадигме для 
+бинарного поиска. На вход подаётся целочисленный массив и 
+число. На выходе - индекс элемента или -1, в случае если искомого 
+элемента нет в массиве.
